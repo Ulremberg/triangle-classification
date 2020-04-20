@@ -18,18 +18,18 @@ public class Main{
             try{
                 while (option == 1) {
                     System.out.println("*********** Welcome ***********");
-                    System.out.println("Enter value first side:");
+                    System.out.print("Enter value first side: ");
                     float side1 = sc.nextFloat();
-                    System.out.println("Enter value second side:");
+                    System.out.print("Enter value second side: ");
                     float side2 = sc.nextFloat();
-                    System.out.println("Enter value third side:");
+                    System.out.print("Enter value third side: ");
                     float side3 = sc.nextFloat();
 
                     Triangle triangle = new Triangle(side1, side2, side3);
                     triangle.typeOfTriangle();			
                     System.out.println("**********************");
                     System.out.println("Continue? 1 - yes, 2 - no");
-                    System.out.println("Choice the option:");
+                    System.out.print("Choice the option: ");
                     option = sc.nextInt();
                 }
 
