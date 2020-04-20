@@ -1,14 +1,17 @@
 package application;
 
 import java.util.InputMismatchException;
+import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Triangle;
 
-public class Main{
+public class Main{ 
 
-    public static Scanner sc = new Scanner(System.in);
+   
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
 
         int option = 1;
 
@@ -31,6 +34,7 @@ public class Main{
                 }
 
                 System.out.println("Bye");
+                sc.close();
             }
             catch(InputMismatchException e){
                 System.out.println("Invalid input");
